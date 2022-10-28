@@ -1,4 +1,4 @@
-# wisata_jatim_app
+# wisata-jatim-app
 
 A new Flutter project.
 
