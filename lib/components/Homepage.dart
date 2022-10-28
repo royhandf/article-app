@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import '../utils/data.dart';
 import 'DetailPage.dart';
 
-class Homepage extends StatefulWidget {
-  const Homepage({super.key});
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
 
   @override
-  State<Homepage> createState() => _HomepageState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _HomepageState extends State<Homepage> {
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,6 +20,7 @@ class _HomepageState extends State<Homepage> {
         itemCount: articles.length,
         itemBuilder: (context, index) {
           return Card(
+            margin: const EdgeInsets.only(top: 5),
             child: ListTile(
               leading: Image.asset('assets/${articles[index]['image']}'),
               title: Text(articles[index]['title']),
